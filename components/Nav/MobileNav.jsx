@@ -18,8 +18,9 @@ import Link from "next/link";
 import { AlignJustify } from "lucide-react";
 const headerLinks = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Properties", path: "/properties" },
+  { name: "Services", path: "/services" },
+  { name: "Locations", path: "/locations" },
+  { name: "Contact us", path: "/contact" },
 ];
 const MobileNav = () => {
   const pathname = usePathname();
@@ -49,21 +50,14 @@ const MobileNav = () => {
         </div>
         <div className="grid gap-4 py-4">
           <Link
-            href="/contact"
+            href="tel: 095274 49733"
             className="-mx-3 flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-4 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50">
             <span className="text-lg text-[#000076]">
               <MdCall />
             </span>
-            +91-123456789
+            095274 49733
           </Link>
-          <Link
-            href="/"
-            className="-mx-3 flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-4 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50">
-            <span className="text-lg text-[#000076]">
-              <FaWhatsapp />
-            </span>
-            Whatsapp us
-          </Link>
+          
         </div>
       </SheetContent>
     </Sheet>

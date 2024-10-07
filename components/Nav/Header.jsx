@@ -9,7 +9,6 @@ import MobileNav from "./MobileNav";
 
 const headerLinks = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Locations", path: "/locations" },
   { name: "Contact us", path: "/contact" },

@@ -36,12 +36,12 @@ const Stats = () => {
       <section className="container py-[100px] flex flex-col items-center">
         <article className="flex flex-col lg:flex-row justify-between">
           <article className="w-full md:w-1/2 lg:w-1/2 flex justify-start">
-            <div className="">
+            <div className="lg:p-4">
               <Image
                 className="rounded-xl"
                 src="/whyPhoton.jpeg"
-                width={1080}
-                height={1080}
+                width={900}
+                height={900}
               />
             </div>
           </article>
@@ -59,14 +59,13 @@ const Stats = () => {
 
             <Separator className="my-2" />
             <div className="flex flex-wrap p-3">
-              {data.map((item) => (
-                <div className="w-full lg:w-1/2 py-2 lg:p-2">
-                  <div className="rounded-xl bg-gray-50 border border-blue-700 hover:bg-blue-800 text-blue-800 hover:text-gray-100 duration-1000 h-[250px] p-8">
+              {data.map((item, index) => (
+                <div className="w-full lg:w-1/2 py-2 lg:p-2" key={index}>
+                  <div
+                    className={`rounded-xl border border-blue-700 hover:bg-blue-800 text-blue-800 hover:text-gray-100 duration-1000 h-[250px] p-8 ${index === 0 ? "bg-blue-800 text-gray-50" : "bg-gray-50"}`}>
                     <h4 className="text-5xl font-semibold py-4">{item.icon}</h4>
                     <h4 className="text-4xl font-semibold">{item.stat}</h4>
-                    <h6 className="text-lg font-regular">
-                      {item.title}
-                    </h6>
+                    <h6 className="text-lg font-regular">{item.title}</h6>
                   </div>
                 </div>
               ))}

@@ -63,7 +63,7 @@ const Footer = async () => {
               <ul className="flex flex-col gap-4 text-sm">
                 {servicesData.map((item) => (
                   <li className="text-md capitalize">
-                    <Link href={"/villas"}>{item.title}</Link>
+                    <Link href={"/#services"}>{item.title}</Link>
                   </li>
                 ))}
               </ul>

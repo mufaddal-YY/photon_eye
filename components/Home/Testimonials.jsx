@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 const Testimonials = ({ data }) => {
   return (
-    <main className="bg-gray-50">
+    <main className="bg-gray-50 ">
       <section
         className="container mx-auto py-[50px] items-center"
         id="testimonials">

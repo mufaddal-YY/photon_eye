@@ -62,11 +62,15 @@ const Stats = () => {
               {data.map((item, index) => (
                 <div className="w-full lg:w-1/2 py-2 lg:p-2" key={index}>
                   <div
-                    className={`rounded-xl border border-blue-800 hover:border-[#2fb1d2] hover:bg-[#2fb1d2] text-blue-800 hover:text-gray-100 duration-1000 h-[250px] p-8 ${index === 0 ? "bg-blue-800 text-gray-50" : "bg-gray-50"} ${index === 3 ? "bg-[#2fb1d2] border-[#2fb1d2] text-gray-50" : ""}`}>
-                    <h4 className="text-5xl font-semibold py-4">{item.icon}</h4>
-                    <h4 className="text-4xl font-semibold">{item.stat}+</h4>
-                    <h6 className="text-lg font-regular">{item.title}</h6>
-                  </div>
+  className={`rounded-xl border 
+    ${index === 0 ? "bg-blue-800 text-gray-50 border-blue-800" : ""} 
+    ${index === 3 ? "bg-[#2fb1d2] text-gray-50 border-[#2fb1d2]" : "bg-gray-50 border-blue-800 text-blue-800"} 
+    hover:border-[#2fb1d2] hover:bg-[#2fb1d2] hover:text-gray-100 duration-1000 h-[250px] p-8`}>
+    
+  <h4 className="text-5xl font-semibold py-4">{item.icon}</h4>
+  <h4 className="text-4xl font-semibold">{item.stat}+</h4>
+  <h6 className="text-lg font-regular">{item.title}</h6>
+</div>
                 </div>
               ))}
             </div>

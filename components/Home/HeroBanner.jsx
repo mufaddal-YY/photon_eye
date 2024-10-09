@@ -55,7 +55,7 @@ const HeroBanner = ({ homeData }) => {
                       </p>
 
                       <div className="my-6">
-                        <Link href="/">
+                        <Link href="/#contact">
                           <Button className="bg-primary py-6 hover:bg-white hover:text-[#000076] border border-[#000076]">
                             Schedule Appointment
                           </Button>
@@ -99,7 +99,7 @@ const HeroBanner = ({ homeData }) => {
                       secondImage={item.clearImage}
                       firstImageClassName="object-cover object-left-top"
                       secondImageClassName="object-cover object-left-top"
-                      className="h-[400px] w-[100%] md:h-[500px] md:w-[100%]"
+                      className=" h-[300px] lg:h-[500px] w-[100%] md:h-[500px] md:w-[100%]"
                       slideMode="hover"
                     />
                   </article>

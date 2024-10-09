@@ -4,24 +4,20 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { FaWhatsapp } from "react-icons/fa";
 import { MdCall } from "react-icons/md";
-import { Button } from "../ui/button";
-import { CiMenuBurger } from "react-icons/ci";
 import Link from "next/link";
 import { AlignJustify } from "lucide-react";
+
 const headerLinks = [
   { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "Locations", path: "/locations" },
-  { name: "Contact us", path: "/contact" },
+  { name: "Services", path: "/#services" },
+  { name: "About", path: "/#about" },
+  { name: "Testimonials", path: "/#testimonials" },
+  { name: "Contact us", path: "/#contact" },
 ];
+
 const MobileNav = () => {
   const pathname = usePathname();
   return (
@@ -57,7 +53,6 @@ const MobileNav = () => {
             </span>
             095274 49733
           </Link>
-          
         </div>
       </SheetContent>
     </Sheet>

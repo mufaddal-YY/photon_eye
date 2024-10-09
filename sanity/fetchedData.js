@@ -66,7 +66,6 @@ export async function getTestimonialsData() {
          _createdAt,
          name,
          review,
-       
         }`,
     {},
     defaultFetchOptions

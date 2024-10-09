@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const AboutDoctor = ({ homeData }) => {
   return (
-    <main className="bg-blue-800 flex items-center">
+    <main className="bg-blue-800 flex items-center" id="about">
       <section className="container py-[50px] flex flex-col items-center">
         {homeData.map((item) => {
           return (

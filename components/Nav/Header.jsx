@@ -9,9 +9,10 @@ import MobileNav from "./MobileNav";
 
 const headerLinks = [
   { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "Locations", path: "/locations" },
-  { name: "Contact us", path: "/contact" },
+  { name: "Services", path: "/#services" },
+  { name: "About", path: "/#about" },
+  { name: "Testimonials", path: "/#testimonials" },
+  { name: "Contact us", path: "/#contact" },
 ];
 
 const Header = () => {
@@ -34,19 +35,11 @@ const Header = () => {
 
           <nav className="list-none lg:flex flex-row justify-end items-center hidden">
             {headerLinks.map((item) => {
-              const isActive =
-                (pathname.includes(item?.path) && item?.path?.length > 1) ||
-                pathname === item?.path;
-
-              const linkClasses = `text-md font-regular border-b-2 border-[#fff] hover:text-[#000076] mx-4 px-2 py-4 transition-colors duration-600 ease-in-out ${
-                isActive ? "text-[#000076] border-b-2 !border-[#000076]" : ""
-              }`;
-
               return (
                 <Link
                   href={item?.path}
                   key={item?.name}
-                  className={linkClasses}>
+                  className="text-md font-regular border-b-2 border-[#fff] hover:text-[#000076] mx-4 px-2 py-4 transition-colors duration-600 ease-in-out">
                   {item?.name}
                 </Link>
               );
@@ -56,9 +49,9 @@ const Header = () => {
             <MobileNav />
           </div>
           <div className="hidden lg:flex">
-            <Link href="#cta">
+            <Link href="#contact">
               <Button className="bg-primary hover:bg-white hover:text-[#000076] border border-[#000076]">
-                Enquire
+                Book Appointment
               </Button>
             </Link>
           </div>

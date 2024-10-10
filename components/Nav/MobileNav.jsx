@@ -46,12 +46,12 @@ const MobileNav = () => {
         </div>
         <div className="grid gap-4 py-4">
           <Link
-            href="tel: 095274 49733"
+            href="tel: 8095545999"
             className="-mx-3 flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-4 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50">
             <span className="text-lg text-[#000076]">
               <MdCall />
             </span>
-            095274 49733
+            8095545999
           </Link>
         </div>
       </SheetContent>

@@ -2,6 +2,7 @@ import React from "react";
 import { FaHospital } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 import { Separator } from "../ui/separator";
 import Link from "next/link";
@@ -69,16 +70,26 @@ const Cta = () => {
 
                 <Separator className="my-2" />
 
-                <div className="flex gap-2 py-2">
-                  <span className="text-lg text-[#000076]">
-                    <FaPhone className="" />
-                  </span>
+                <div className="flex flex-row justify-between">
+                  <div className="flex gap-2 py-2">
+                    <span className="text-lg text-[#000076]">
+                      <FaPhone className="" />
+                    </span>
 
-                  <Link href={`tel:${item.contact}`}>
-                    <h4 className=" text-[#000076] capitalize font-semibold text-md flex items-center gap-2 ">
-                      {item.contact}
-                    </h4>
-                  </Link>
+                    <Link href={`tel:${item.contact}`}>
+                      <h4 className=" text-[#000076] capitalize font-semibold text-md flex items-center gap-2 ">
+                        {item.contact}
+                      </h4>
+                    </Link>
+                  </div>
+
+                  <div className="flex gap-2 py-2">
+                    <Link href={`tel:${item.contact}`}>
+                      <h4 className=" text-[#000076] capitalize font-medium text-md flex items-center gap-2 ">
+                        Get Directions <MdOutlineArrowRightAlt className="text-xl"/>
+                      </h4>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

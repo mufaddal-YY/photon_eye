@@ -70,26 +70,16 @@ const Cta = () => {
 
                 <Separator className="my-2" />
 
-                <div className="flex flex-row justify-between">
-                  <div className="flex gap-2 py-2">
-                    <span className="text-lg text-[#000076]">
-                      <FaPhone className="" />
-                    </span>
+                <div className="flex gap-2 py-2">
+                  <span className="text-lg text-[#000076]">
+                    <FaPhone className="" />
+                  </span>
 
-                    <Link href={`tel:${item.contact}`}>
-                      <h4 className=" text-[#000076] capitalize font-semibold text-md flex items-center gap-2 ">
-                        {item.contact}
-                      </h4>
-                    </Link>
-                  </div>
-
-                  <div className="flex gap-2 py-2">
-                    <Link href={`tel:${item.contact}`}>
-                      <h4 className=" text-[#000076] capitalize font-medium text-md flex items-center gap-2 ">
-                        Get Directions <MdOutlineArrowRightAlt className="text-xl"/>
-                      </h4>
-                    </Link>
-                  </div>
+                  <Link href={`tel:${item.contact}`}>
+                    <h4 className=" text-[#000076] capitalize font-semibold text-md flex items-center gap-2 ">
+                      {item.contact}
+                    </h4>
+                  </Link>
                 </div>
               </div>
             </div>
